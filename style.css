@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+}
+
+body {
+    max-width: 1280px;
+    height: 100vh;
+    background-color: #01DF74;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app {
+    width: 400px;
+    height: 400px;
+    background-color: #8904B1;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.788);
+    color: #fff;
+}
+
+.entrada-dados {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* remover setas do input number */
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+.entrada-dados .inputNumber {
+    width: 90px;
+    height: 40px;
+    font-size: 1.3rem;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.entrada-dados button {
+    width: 90px;
+    height: 40px;
+    background-color: #0B6138;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.entrada-dados button:hover {
+    background-color: #04B486;
+    width: 95px;
+    height: 45px;
+    font-size: 1rem;
+}
+
+.resposta {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+span {
+    background-color: #01DF74;
+    padding: 10px;
+    font-size: 3rem;
+    border-radius: 4px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000000;
+}
